@@ -152,7 +152,6 @@ AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
 if os.getcwd() == "/app":
     DEBUG = False
 
-"""
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -168,4 +167,3 @@ LOGGING = {
         },
     },
 }
-"""
