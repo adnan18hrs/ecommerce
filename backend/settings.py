@@ -11,7 +11,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "django.contrib.staticfiles",
+    # "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
     "base.apps.BaseConfig",
@@ -152,6 +152,7 @@ AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
 if os.getcwd() == "/app":
     DEBUG = False
 
+"""
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -167,3 +168,4 @@ LOGGING = {
         },
     },
 }
+"""
