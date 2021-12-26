@@ -58,7 +58,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "demodatabase",  # this is database name
         "USER": "postgres",  # master username
-        "PASSWORD": os.environ.get("DB_MASTER_PASSWORD"),  # master password
+        "PASSWORD": "Adnan123",  # master password
         "HOST": "database-2.cmgf1u68l5y1.ap-south-1.rds.amazonaws.com",
         "PORT": "5432",
     }
@@ -143,8 +143,8 @@ MEDIA_ROOT = BASE_DIR / "static/images"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+AWS_ACCESS_KEY_ID = "AKIAVFPJ6E2EXNIZSSWI"
+AWS_SECRET_ACCESS_KEY = "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"
 # AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 # AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
