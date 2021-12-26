@@ -3,7 +3,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-4hk^7&z^2hwurnm0r9^qfmgl)hg+oh@!k8!z(w%59qg1@c(fmt"
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "adnan-e-commerce.herokuapp.com"]
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -149,8 +149,10 @@ AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
 
+"""
 if os.getcwd() == "/app":
     DEBUG = False
+"""
 
 """
 LOGGING = {
@@ -170,7 +172,7 @@ LOGGING = {
 }
 """
 
-
+"""
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -209,3 +211,4 @@ LOGGING = {
         },
     },
 }
+"""
