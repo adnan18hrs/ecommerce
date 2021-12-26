@@ -58,7 +58,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "demodatabase",  # this is database name
         "USER": "postgres",  # master username
-        "PASSWORD": "Adnan123",  # master password
+        "PASSWORD": os.environ.get("AWS_DB_MASTER_PASSWORD"),  # master password
         "HOST": "database-2.cmgf1u68l5y1.ap-south-1.rds.amazonaws.com",
         "PORT": "5432",
     }
