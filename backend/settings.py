@@ -3,7 +3,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-4hk^7&z^2hwurnm0r9^qfmgl)hg+oh@!k8!z(w%59qg1@c(fmt"
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "adnan-e-commerce.herokuapp.com"]
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -143,16 +143,16 @@ MEDIA_ROOT = BASE_DIR / "static/images"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-AWS_ACCESS_KEY_ID = "AKIAVFPJ6E2EXNIZSSWI"
-AWS_SECRET_ACCESS_KEY = "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"
-# AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-# AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+# AWS_ACCESS_KEY_ID = "AKIAVFPJ6E2EXNIZSSWI"
+# AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
 
 if os.getcwd() == "/app":
     DEBUG = False
 
-
+"""
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -168,3 +168,4 @@ LOGGING = {
         },
     },
 }
+"""
