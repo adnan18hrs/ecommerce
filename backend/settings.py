@@ -151,3 +151,20 @@ AWS_STORAGE_BUCKET_NAME = "proshop-bucket-demo-786"
 
 if os.getcwd() == "/app":
     DEBUG = False
+
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": os.getenv("DJANGO_LOG_LEVEL", "DEBUG"),
+        },
+    },
+}
